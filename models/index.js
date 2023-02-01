@@ -1,7 +1,20 @@
-const User = require('./User');
+// import models
+const Product = require('./Product');
+const Category = require('./Category');
+const Tag = require('./Tag');
+const ProductTag = require('./ProductTag');
 
-// ASSOCIATIONS HERE
+// Products belongsTo Category
+
+// Categories have many Products
+
+// Products belongToMany Tags (through ProductTag)
+
+// Tags belongToMany Products (through ProductTag)
 
 module.exports = {
-  User,
+  Product,
+  Category,
+  Tag,
+  ProductTag,
 };
